@@ -30,7 +30,7 @@ def show_propósito():
     ''', unsafe_allow_html=True)
 
     # Carregar e exibir a imagem
-    imagem = "Home.jpg"
+    imagem = "Fiap_TechChallenge_Ibovespa/Img/Home.jpg"
     try:
         img = Image.open(imagem)
         st.image(img, caption="", use_column_width=True)
