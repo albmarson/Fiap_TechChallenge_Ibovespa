@@ -40,9 +40,8 @@ def show_propósito():
 # Chame a função para mostrar o Propósito
 show_propósito()
 
-def show_intro():
 # Seções do conteúdo
-    st.header("Introdução")
+st.header("Introdução")
 
 st.markdown("""
 Antes de adentrar em qualquer análise, é crucial compreender profundamente o tema em questão, explorando suas nuances e contextos específicos. Esta abordagem não apenas estabelece uma base sólida de entendimento, mas também possibilita uma interpretação mais informada e precisa dos dados, além de facilitar a formulação de hipóteses.
@@ -53,14 +52,14 @@ Para alcançar esse fim, os dados históricos da IBOVESPA foram obtidos de manei
 
 A modelagem preditiva adotada baseia-se em séries temporais, uma abordagem adequada dada a natureza dos dados financeiros, que frequentemente apresentam comportamentos temporais e sazonalidades distintas. O modelo foi treinado e ajustado meticulosamente para maximizar a precisão na previsão do fechamento diário da IBOVESPA. Espera-se que o modelo desenvolvido alcance uma acurácia superior a 70%, medida por métricas robustas de desempenho. Este estudo não só visa contribuir para uma compreensão mais profunda dos movimentos do mercado financeiro brasileiro, mas também demonstrar a aplicação prática de técnicas analíticas avançadas em um contexto de investimentos dinâmico e desafiador.
 """)
-def show_ibovespa():
-    st.header("IBOVESPA: O Pilar do Mercado Financeiro Brasileiro")
+
+st.header("IBOVESPA: O Pilar do Mercado Financeiro Brasileiro")
 
 st.markdown("""
 A IBOVESPA, principal índice da bolsa de valores brasileira, é um indicador crucial do mercado financeiro do país. Criada em 1968, a IBOVESPA reflete a performance das ações mais significativas e influentes, servindo como barômetro das condições econômicas e políticas do Brasil. Com uma composição diversificada que abrange setores como financeiro, commodities e tecnologia, a IBOVESPA desempenha um papel fundamental na orientação de investidores e na formulação de estratégias de mercado, tanto a nível nacional quanto internacional.
 """)
-def show_fonte_dados():
-    st.header("Fonte de Dados")
+
+st.header("Fonte de Dados")
 
 st.markdown("""
 A base de dados utilizada foi extraída de maneira automatizada, fornecendo informações detalhadas sobre os preços de abertura, fechamento, máximos, mínimos e volumes negociados ao longo do período analisado. Esse processo automatizado contribuiu significativamente para reduzir o tempo de extração dos dados, evitando a necessidade de extração manual, que poderia ser mais demorado e propenso a erros. 
@@ -424,4 +423,28 @@ st.markdown("""
     - **Acurácia:** A acurácia do modelo foi de 92,71%, refletindo a eficácia da inclusão dos feriados na previsão dos dados.
 
     Ambos os modelos mostram um desempenho robusto, com MAPE e acurácia indicando que o modelo Prophet é eficaz na previsão dos dados. A inclusão de feriados não trouxe uma melhora significativa na precisão das previsões, mas forneceu um ajuste mais refinado para os dados sazonais.
+    """)
+
+
+st.header("Conclusão")
+
+st.markdown("""
+Neste trabalho, conduzimos uma análise detalhada dos retornos diários do índice Ibovespa, empregando uma combinação de técnicas analíticas para compreender as flutuações e os padrões históricos do índice. A análise visual e descritiva revelou períodos de alta volatilidade e eventos econômicos significativos, como a Crise Financeira de 2008 e a pandemia de COVID-19, proporcionando uma visão abrangente das forças que impactaram o mercado.
+
+Para a previsão dos retornos futuros, implementamos o modelo Prophet, uma metodologia desenvolvida pelo Facebook para a previsão de séries temporais. O modelo Prophet demonstrou notável eficácia ao lidar com dados sazonais, tendências e eventos externos, oferecendo previsões robustas e ajustáveis.
+
+A acurácia alcançada pelo modelo Prophet, que foi de 92,72%, destaca sua eficácia na captura e previsão dos padrões dos retornos diários do Ibovespa. Este desempenho ressalta a relevância do Prophet como uma ferramenta de previsão financeira, proporcionando previsões consistentes e valiosas para investidores e analistas do mercado.
+
+Em síntese, o modelo Prophet revelou-se uma ferramenta essencial para a previsão de séries temporais financeiras, contribuindo de maneira significativa para a compreensão das tendências e flutuações do Ibovespa. As análises realizadas evidenciam a importância das técnicas avançadas de previsão na formulação de estratégias e na tomada de decisões fundamentadas no contexto do mercado acionário.
+
+    """)
+
+st.header("Próximas Etapas")
+
+st.markdown("""
+Embora o modelo Prophet tenha oferecido previsões valiosas para os retornos diários do Ibovespa, há oportunidades para aprimorar a acurácia das previsões. Uma abordagem promissora para futuros estudos é a aplicação de técnicas avançadas de deep learning.
+
+Métodos como redes neurais, em particular redes neurais recorrentes (RNNs) e suas variantes, como LSTMs, têm o potencial de capturar padrões mais complexos nos dados. Estas técnicas são especialmente eficazes para séries temporais e podem superar os modelos tradicionais em termos de precisão.
+
+Investigar essas técnicas avançadas pode melhorar significativamente a capacidade de previsão e proporcionar uma análise mais detalhada das variações do mercado. Sugerimos explorar a integração dessas abordagens em futuros estudos para obter previsões ainda mais precisas e informativas.
     """)
