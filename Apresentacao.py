@@ -30,7 +30,7 @@ def show_propósito():
     ''', unsafe_allow_html=True)
 
     # Carregar e exibir a imagem
-    imagem = "Img/Home.jpg"
+    imagem = "Home.jpg"
     try:
         img = Image.open(imagem)
         st.image(img, caption="", use_column_width=True)
@@ -99,7 +99,7 @@ Entre 2020 e 2024, mais especificamente a partir de 2020, a pandemia de COVID-19
 """)
 
 # Carregar a imagem
-imagem_retornos = "Img/Retornos_Diarios_Ibovespa.png"
+imagem_retornos = "Retornos_Diarios_Ibovespa.png"
 try:
     img = Image.open(imagem_retornos)
     
@@ -125,7 +125,7 @@ A volatilidade histórica anualizada de 27.32% calculada para o Ibovespa represe
 """)
 
 # Carregar a imagem
-imagem_votalidade = "Img/Votalidade_Historica.png"
+imagem_votalidade = "Votalidade_Historica.png"
 try:
     img = Image.open(imagem_votalidade)
     
@@ -151,7 +151,7 @@ O gráfico de Candlestick aplicado aos dados da Ibovespa oferece uma representa�
 """)
 
 # Carregar a imagem
-imagem_candlestick = "Img/Candlestick.png"
+imagem_candlestick = "Candlestick.png"
 try:
     img = Image.open(imagem_candlestick)
     
@@ -187,7 +187,7 @@ A análise da variação percentual anual revela como os índices analisados evo
 """)
 
 # Carregar a imagem
-imagem_vpercentual = "Img/Variacao_Percentual.png"
+imagem_vpercentual = "Variacao_Percentual.png"
 try:
     img = Image.open(imagem_vpercentual)
     
@@ -252,7 +252,7 @@ st.markdown("""
     """)
 
 
-imagem_mmoveis = "Img/Medias_Moveis.png"
+imagem_mmoveis = "Medias_Moveis.png"
 try:
     img = Image.open(imagem_mmoveis)
     
@@ -278,7 +278,7 @@ st.markdown("""
     """)
 
 # Carregar a imagem
-imagem_mmoveis2023 = "Img/Medias_Moveis_2023.png"
+imagem_mmoveis2023 = "Medias_Moveis_2023.png"
 try:
     img = Image.open(imagem_mmoveis2023)
     
@@ -320,7 +320,7 @@ st.markdown("""
     """)
 
 # Carregar a imagem
-imagem_arima = "Img/Modelo_Arima.png"
+imagem_arima = "Modelo_Arima.png"
 try:
     img = Image.open(imagem_arima)
     
@@ -371,7 +371,7 @@ st.markdown("""
     Para realizar as previsões, o modelo Prophet foi inicialmente configurado com daily_seasonality=True, permitindo que o modelo capturasse padrões sazonais diários nos dados. Após o treinamento do modelo com o conjunto de dados de treinamento, foi gerado um DataFrame para prever os próximos 30 dias. O gráfico a seguir mostra as previsões feitas pelo modelo Prophet (em azul) comparadas aos valores reais (em vermelho) do conjunto de teste.
     """)
 # Carregar a imagem
-imagem_prophet = "Img/Modelo_Prophet.png"
+imagem_prophet = "Modelo_Prophet.png"
 try:
     img = Image.open(imagem_prophet)
     
@@ -399,7 +399,7 @@ st.markdown("""
     """)
 
 # Carregar a imagem
-imagem_prophetferiados = "Img/Modelo_Prophet_Feriados.png"
+imagem_prophetferiados = "Modelo_Prophet_Feriados.png"
 try:
     img = Image.open(imagem_prophetferiados)
     
