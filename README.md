@@ -18,6 +18,6 @@ This repository contains the files and code for the study proposed by FIAP as pa
 
 The project is hosted on Streamlit and can be accessed via the following link:  [Tech Challenge IBOVESPA - Streamlit | Alberto Marson](https://fiap-techchallenge-ibovespa.streamlit.app/)
 
-The script available on Streamlit can be reviewed and analyzed in the file: Apresentacao.py. The Jupyter/Python code is available in the file: Script_Analise_Ibovespa.ipynb, which contains all the data processing, analysis, and project development.
+The script available on Streamlit can be reviewed and analyzed in the file: `Apresentacao.py`. The Jupyter/Python code is available in the file: `Script_Analise_Ibovespa.ipynb`, which contains all the data processing, analysis, and project development.
 
 As I was unfamiliar with Streamlit before starting the postgraduate program, I chose to use it for presenting the data and took the opportunity to learn more about it.
